@@ -1,0 +1,14 @@
+services: 
+  db:
+    image: bitnami/postgresql:latest
+    environment:
+      - POSTGRES_USER=postgrees
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=roomio
+    ports:
+      - 5432:5432
+    volumes:
+      - roomio_db_data:/var/lib/postgresql/data
+
+volumes:
+  roomio_db_data:
