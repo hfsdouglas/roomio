@@ -2,7 +2,7 @@ services:
   db:
     image: bitnami/postgresql:latest
     environment:
-      - POSTGRES_USER=postgrees
+      - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=roomio
     ports:
