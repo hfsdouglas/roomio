@@ -1,4 +1,4 @@
-import { user } from "./user.js";
+import { user } from "./user.ts";
 
 export const schemas = {
     user
